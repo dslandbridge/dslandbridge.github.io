@@ -1,0 +1,227 @@
+{
+  "code":200,
+  "data":[
+    {
+      "id" :1,
+      "start": "西安",
+      "destination": "霍尔果斯",
+      "transport_type": "1",
+      "shift_des": "西安-霍尔果斯"
+    },
+    {
+      "id" :2,
+      "start": "重庆",
+      "destination": "莫斯科",
+      "transport_type": "1",
+      "shift_des": "重庆-莫斯科"
+    },
+    {
+      "id" :3,
+      "start": "武汉",
+      "destination": "马拉舍维奇",
+      "transport_type": "1",
+      "shift_des": "武汉-马拉舍维奇"
+    },
+    {
+      "id" :4,
+      "start": "长沙",
+      "destination": "马拉舍维奇",
+      "transport_type": "1",
+      "shift_des": "长沙-马拉舍维奇"
+    },
+    {
+      "id" :5,
+      "start": "成都",
+      "destination": "莫斯科",
+      "transport_type": "1",
+      "shift_des": "成都-莫斯科"
+    },
+    {
+      "id" :6,
+      "start": "南昌",
+      "destination": "莫斯科",
+      "transport_type": "1",
+      "shift_des": "南昌-莫斯科"
+    },
+    {
+      "id" :7,
+      "start": "西安",
+      "destination": "阿拉山口",
+      "transport_type": "1",
+      "shift_des": "西安-阿拉山口"
+    },
+    {
+      "id" :8,
+      "start": "重庆",
+      "destination": "明斯克",
+      "transport_type": "1",
+      "shift_des": "重庆-明斯克"
+    },
+    {
+      "id" :9,
+      "start": "武汉",
+      "destination": "汉堡",
+      "transport_type": "1",
+      "shift_des": "武汉-汉堡"
+    },
+    {
+      "id" :10,
+      "start": "长沙",
+      "destination": "汉堡",
+      "transport_type": "1",
+      "shift_des": "长沙-汉堡"
+    },
+    {
+      "id" :11,
+      "start": "成都",
+      "destination": "罗兹",
+      "transport_type": "1",
+      "shift_des": "成都-罗兹"
+    },
+    {
+      "id" :12,
+      "start": "南昌",
+      "destination": "明斯克",
+      "transport_type": "1",
+      "shift_des": "南昌-明斯克"
+    },
+    {
+      "id" :13,
+      "start": "西安",
+      "destination": "莫斯科",
+      "transport_type": "1",
+      "shift_des": "西安-莫斯科"
+    },
+    {
+      "id" :14,
+      "start": "西安",
+      "destination": "明斯克",
+      "transport_type": "1",
+      "shift_des": "西安-明斯克"
+    },
+    {
+      "id" :15,
+      "start": "西安",
+      "destination": "阿拉木图",
+      "transport_type": "1",
+      "shift_des": "西安-阿拉木图"
+    },
+    {
+      "id" :16,
+      "start": "西安",
+      "destination": "塔什干",
+      "transport_type": "1",
+      "shift_des": "西安-塔什干"
+    },
+    {
+      "id" :17,
+      "start": "西安",
+      "destination": "马拉舍维奇",
+      "transport_type": "1",
+      "shift_des": "西安-马拉舍维奇"
+    },
+    {
+      "id" :18,
+      "start": "西安",
+      "destination": "汉堡及杜伊斯堡",
+      "transport_type": "1",
+      "shift_des": "西安-汉堡及杜伊斯堡"
+    },
+    {
+      "id" :19,
+      "start": "重庆",
+      "destination": "马拉舍维奇",
+      "transport_type": "1",
+      "shift_des": "重庆-马拉舍维奇"
+    },
+    {
+      "id" :20,
+      "start": "重庆",
+      "destination": "汉堡",
+      "transport_type": "1",
+      "shift_des": "重庆-汉堡"
+    },
+    {
+      "id" :21,
+      "start": "重庆",
+      "destination": "杜伊斯堡",
+      "transport_type": "1",
+      "shift_des": "重庆-杜伊斯堡"
+    },
+    {
+      "id" :22,
+      "start": "武汉",
+      "destination": "杜伊斯堡",
+      "transport_type": "1",
+      "shift_des": "武汉-杜伊斯堡"
+    },
+    {
+      "id" :23,
+      "start": "武汉",
+      "destination": "里昂",
+      "transport_type": "1",
+      "shift_des": "武汉-里昂"
+    },
+    {
+      "id" :24,
+      "start": "武汉",
+      "destination": "伦敦",
+      "transport_type": "1",
+      "shift_des": "武汉-伦敦"
+    },
+    {
+      "id" :25,
+      "start": "武汉",
+      "destination": "中亚及俄罗斯",
+      "transport_type": "1",
+      "shift_des": "武汉-中亚及俄罗斯"
+    },
+    {
+      "id" :26,
+      "start": "长沙",
+      "destination": "杜伊斯堡",
+      "transport_type": "1",
+      "shift_des": "长沙-杜伊斯堡"
+    },
+    {
+      "id" :27,
+      "start": "长沙",
+      "destination": "莫斯科",
+      "transport_type": "1",
+      "shift_des": "长沙-莫斯科"
+    },
+    {
+      "id" :28,
+      "start": "长沙",
+      "destination": "明斯克",
+      "transport_type": "1",
+      "shift_des": "长沙-明斯克"
+    },
+    {
+      "id" :29,
+      "start": "长沙",
+      "destination": "蒂尔堡",
+      "transport_type": "1",
+      "shift_des": "长沙-蒂尔堡"
+    },
+    {
+      "id" :30,
+      "start": "成都",
+      "destination": "纽伦堡",
+      "transport_type": "1",
+      "shift_des": "成都-纽伦堡"
+    },
+    {
+      "id" :31,
+      "start": "成都",
+      "destination": "蒂尔堡",
+      "transport_type": "1",
+      "shift_des": "成都-蒂尔堡"
+    }
+  ],
+  "transport_type":{
+    "1":"铁路",
+    "2":"海运",
+    "3":"陆运"
+  }
+}

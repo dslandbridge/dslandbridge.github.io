@@ -1,0 +1,99 @@
+@charset "utf-8";
+@import "px2value";
+/*清除浮动*/
+.clearfix:before,
+.clearfix:after {
+  content:"";
+  display:block;
+}
+.clearfix:after{clear:both;}
+.clearfix{*zoom:1;}
+/*左浮动*/
+.lf {
+  float: left;
+}
+/*右浮动*/
+.rf {
+  float: right;
+}
+ul,ol,dl{list-style:none;}
+ul li{list-style:none;}
+input, button {box-sizing: border-box;}
+//主色调
+@base_color:#2A82E4;
+@dw:1920; // 设计稿宽度
+body{
+  font-family:"宋体";
+}
+p,ul,li{
+  margin:0;
+  padding:0;
+}
+@media only screen and (max-width: 768px) {
+  .intro-box{
+    top:6%;
+    width:90%;
+    right:5%;
+    .intro-two{
+      margin-bottom: @p40;
+    }
+  }
+}
+@media only screen and (min-width: 769px) {
+  .intro-box{
+    top:95/765*100%;
+    width:1100/@dw*100%;
+    right:380/@dw*100%;
+    .intro-two{
+      margin-bottom: @p60;
+    }
+  }
+}
+//深耕国内外运输线
+.line-detail{
+  background: url("../img/linedetail_bg.png") no-repeat center;
+  background-size: cover;
+  height:@p765;
+  position:relative;
+  .mask{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:rgba(255,255,255,0.5);
+  }
+  .intro-box{
+    text-align: right;
+    position:absolute;
+    .title{
+      font-size: @p40;
+    }
+    .en-title{
+      font-size: @p14;
+    }
+    .intro{
+      font-size: @p22;
+      line-height: 1.6;
+      text-align: justify;
+      margin-top: 50/765*100%;
+      word-break: break-all;
+    }
+    .button{
+      display:block;
+      min-width:225/835*100%;
+      height:@p40;
+      line-height:@p40;
+      text-align: center;
+      border:none;
+      background-color: #6799CD;
+      font-size: @p22;
+      color:#ffffff;
+      border-radius: @p10;
+      opacity: 0.8;
+      position:absolute;
+      right:0;
+      cursor:pointer;
+    }
+  }
+}

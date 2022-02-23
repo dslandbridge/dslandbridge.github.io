@@ -1,0 +1,69 @@
+<div class="header">
+    <div id="companyLogo" class="companyLogo">
+        <img class="companyLogoImg" src='../img/company_logo.png'/>  
+    </div> 
+    <div id="menuLst" class="menuLst">
+        <div class="leftMenu homeMenu">
+            <a href="home.html" class="menuItem" i18n="menu.home">首页</a>
+        </div>
+        <div class="midMenu aboutUSMenu">
+            <a href="aboutUS.html" class="menuItem" i18n="menu.aboutUS">关于我们</a>
+        </div>
+        <div class="midMenu lineIntroductionMenu">
+            <a href="lineIntro_rail.html" class="menuItem" i18n="menu.lineIntroduction">线路介绍</a>
+        </div>
+        <div class="midMenu newsMenu">
+            <a href="news.html" class="menuItem" i18n="menu.news">新闻资讯</a>
+        </div>
+        <div class="midMenu partnersMenu">
+            <a href="partners.html" class="menuItem" i18n="menu.partners">合作伙伴</a>
+        </div>
+        <div class="midMenu lineDetailsMenu">
+            <a  href="line_details.html" class="menuItem" i18n="menu.lineDetails">线路详情</a>
+        </div>
+    </div>
+    <div id="lanuageSwitch" class="lanuageSwitch">
+        <span id="switchToCn" class="lang">中</span>
+        <span>|</span>
+        <span id="switchToEn" class="lang">EN</span>
+    </div>
+</div>
+<script>
+    $(document).ready(function() {
+        $(window).scrollTop(0);
+        $("[i18n]").i18n({
+            defaultLang: "cn",
+            filePath: "/pages/i18n/",
+            filePrefix: "i18n_",
+            fileSuffix: "",
+            forever: true,
+            callback: function() {
+                handleStyleAndEvt();
+            }
+        });
+            /*切换为中文 - 按钮*/
+        $("#switchToCn").click(function() {
+            $(".aboutUSTransportBlockInfo").css("display", "block");
+            $("[i18n]").i18n({
+                lang: "cn",
+                filePath: "/pages/i18n/",
+                callback: function() {
+                    handleStyleAndEvt();
+                }
+            });
+        });
+            /*切换为英文 - 按钮*/
+        $("#switchToEn").click(function() {
+            $(".aboutUSTransportBlockInfo").css("display", "block");
+            $("[i18n]").i18n({
+                lang: "en",
+                filePath: "/pages/i18n/",
+                callback: function() {
+                    handleStyleAndEvt();
+                }
+            });
+        });
+    });
+</script>
+
+

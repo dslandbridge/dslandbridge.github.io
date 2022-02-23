@@ -1,0 +1,109 @@
+@charset "utf-8";
+/*清除浮动*/
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: block;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+/*左浮动*/
+.lf {
+  float: left;
+}
+/*右浮动*/
+.rf {
+  float: right;
+}
+ul,
+ol,
+dl {
+  list-style: none;
+}
+ul li {
+  list-style: none;
+}
+input,
+button {
+  box-sizing: border-box;
+}
+body {
+  font-family: "宋体";
+}
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+@media only screen and (max-width: 768px) {
+  .intro-box {
+    top: 6%;
+    width: 90%;
+    right: 5%;
+  }
+  .intro-box .intro-two {
+    margin-bottom: 0.8533rem;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .intro-box {
+    top: 12.41830065%;
+    width: 57.29166667%;
+    right: 19.79166667%;
+  }
+  .intro-box .intro-two {
+    margin-bottom: 1.28rem;
+  }
+}
+.line-detail {
+  background: url("../img/linedetail_bg.png") no-repeat center;
+  background-size: cover;
+  height: 16.32rem;
+  position: relative;
+}
+.line-detail .mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.5);
+}
+.line-detail .intro-box {
+  text-align: right;
+  position: absolute;
+}
+.line-detail .intro-box .title {
+  font-size: 0.8533rem;
+}
+.line-detail .intro-box .en-title {
+  font-size: 0.2987rem;
+}
+.line-detail .intro-box .intro {
+  font-size: 0.4693rem;
+  line-height: 1.6;
+  text-align: justify;
+  margin-top: 6.53594771%;
+  word-break: break-all;
+}
+.line-detail .intro-box .button {
+  display: block;
+  min-width: 26.94610778%;
+  height: 0.8533rem;
+  line-height: 0.8533rem;
+  text-align: center;
+  border: none;
+  background-color: #6799CD;
+  font-size: 0.4693rem;
+  color: #ffffff;
+  border-radius: 0.2133rem;
+  opacity: 0.8;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}

@@ -1,0 +1,186 @@
+/*  公共 */
+body{
+    margin: 0px;
+    padding: 0px;
+}
+body,h1,h3,h2,h4,p,ul,dl,dd,dt {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+img {
+    border:none;
+    vertical-align: top;
+}
+li {
+    list-style: none;
+    vertical-align: top;
+}
+a {
+    outline:none;
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover {
+    transition:0.5s;
+}
+body {
+    font:14px "Microsoft YaHei",微软雅黑,"Microsoft JhengHei",华文细黑,STHeiti,MingLiu;
+    font-family:"宋体";
+}
+body,h1,h3,h2,h4,p,ul,dl,dd,dt {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+img {
+    border:none;
+    vertical-align: top;
+}
+li {
+    list-style: none;
+    vertical-align: top;
+}
+a {
+    outline:none;
+    text-decoration: none;
+    transition:0.5s;
+}
+a:hover {
+    transition:0.5s;
+}
+body {
+    font:14px "Microsoft YaHei",微软雅黑,"Microsoft JhengHei",华文细黑,STHeiti,MingLiu;
+    font-family:"宋体";
+}
+.clearBoth{
+    clear:both;
+}
+.dislayNone{
+    display: none;
+}
+.displayBlock{
+    display: block;
+}
+
+/* 页头信息 */
+.header{
+    background-color: rgb(41,130,228);   
+    width: 100%;
+    font-size: 0.35rem;
+    height: 1rem;
+    line-height: 1rem;
+}
+.menuItem{
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+.leftMenu {
+    float: left;
+    margin-left: 13%;
+    margin-right: 1%;
+}
+.midMenu{
+    float: left;
+    margin-right: 1%;
+}
+.rightMenu{
+    float:left;
+}
+.lanuageSwitch{
+    float:right;
+    color: white;
+    margin-right: 2%
+}
+.languageChoose                                                                           {
+    color: black;
+}
+.lang{
+    cursor: pointer;
+}
+
+/* 页尾信息 */
+.footer{
+    background-color: rgb(25,25,25);
+    color: white;
+    width: 100%;
+    word-break: break-all;
+    font-size: 0.2rem;
+}
+.footer a{
+    color:white;
+}
+.footerMidLevel{
+    line-height: 0.45rem;
+}
+.footerBlockServiceTime{
+    font-size: 0.2rem;
+}
+.footerBlockTelNum{
+  /*  font-size: 0.3rem;*/
+}
+.footerTitle{
+    font-size: 0.35rem;
+    margin-top: 0.4rem;
+    line-height: 0.6rem;
+}
+.footerLeftBlock {
+    float:left;
+    width: 46%;
+}
+.footerMidBlock {
+    float:left;
+    width: 12%;
+}
+.footerRightBlock {
+    float:left;
+    width: 30%;
+}
+.footerSmallTitle {
+    margin-left:20%;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+.footerBlockLeft{
+   float: left;
+   width: 35%;
+   margin-right: 5px;
+   text-align: right;
+}
+.footerBlockRight{
+    float: left;
+    width: 60%;
+ }
+ .footerQRPic{
+    margin-top: 0.4rem;
+    width: 30%;
+    height: 100%;
+}
+.footerQRDiv{
+    background: url(../img/DSQR.jpg) no-repeat 0px 0px;
+    width:100%;
+    height:40%;
+    background-size:100% 100%;
+}
+.copyRight{
+    text-align: center;
+    height: 1rem;
+    line-height: 1rem;
+}
+.footerQRText{
+    text-align: center;
+    margin-top: 0.1rem;
+}
+.coptRightInfo{
+    font-size: 0.32rem;
+}
+
+.companyLogo{
+    position: absolute;
+    left: 3%;
+}
+.companyLogoImg{
+    width: 1rem;
+    margin-top: 1%;
+}

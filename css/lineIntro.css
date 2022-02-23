@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+/* 线路介绍 */
+/*lineIntro_banner*/
+.contentBanner{
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+}
+.lineIntro_title {
+    padding-bottom: 1.5rem;
+    margin-left: 16%;
+    width: 68%;
+}
+.lineIntro_hd {
+    height: 0.1rem;
+    background: #d6d6d6;
+    position: relative;
+    margin: 1rem auto 0;
+}
+.lineIntro_txt {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.64rem;
+    padding: 0 0.5rem;
+    margin: auto;
+    background-color: #fff;
+    text-align: center;
+}
+.lineIntro_txt_cn {
+    /*color: #1b75e3;*/
+}
+.lineIntro_txt_en {
+    font-size: 0.3rem;
+    line-height: 0.5rem;
+    padding: 0;
+    color: #8d8d8d;
+    background: transparent;
+    transform: translate(-50%, 60%);
+}
+
+/*lineIntro_main*/
+.lineIntro_main{
+    width: 60%;
+    margin-left: 20%;
+}
+.lineIntro_main_con{
+    display: flex;
+	margin:0 auto;
+}
+.lineIntro_main .lineIntro_list{
+    overflow-y: auto;
+    background-color: #f5f5f5;
+    width: 30%;
+    height: 10rem;
+}
+.lineIntro_list li{
+	text-align: center;
+	border-bottom:1px solid #d5d3d4;
+	border-top:1px solid #f7f7f7;
+}
+.lineIntro_list li a{
+    display: block;
+	font-size:0.27rem;
+    height: 1rem;
+	line-height: 1rem;
+	color:#282d2a;    
+	border-right: 0.1rem solid transparent;
+}
+.lineIntro_details_pic{
+    width: 40%;
+}
+.lineIntro_list .lineIntro_focus a{
+	color:#fdfeff;
+	background: #1b75e3;
+	border-right: 0.1rem solid #a4c7f2;
+}
+.lineIntro_list li a:hover{
+	color:#fdfeff;
+	background: #1b75e3;
+	border-right: 0.1rem  solid #a4c7f2;
+	transition: all .3s;
+}
+.lineIntro_main .lineIntro_details{
+    flex: 1;
+    max-height: 880px;
+    padding-left: 30px;
+}
+.lineIntro_main .lineIntro_details .lineIntro_details_title{
+    font-size: 0.35rem;
+    line-height: 1rem;
+    padding: 0.5rem 0 0.1rem;
+    font-weight: bold;
+}
+.lineIntro_main .lineIntro_details .lineIntro_details_pages{
+    max-height: 796px;
+    overflow-y: auto;
+}
+.lineIntro_main .lineIntro_details .lineIntro_details_pages p{
+    font-size: 0.27rem;
+    line-height: 0.5rem;
+    color: #999999;
+    margin-bottom: 0.5rem;
+    word-break: break-all;
+}
+
+.lineIntro_main .lineIntro_to_knowRoute {
+    display: block;
+    margin: 0.3rem auto;
+    overflow: hidden;
+}
+.lineIntro_main .lineIntro_to_knowRoute .knowRoute {
+    float: right;
+    font-size: 0.3rem;
+    color: #282d2a;
+    padding: 0 0.5rem;
+    background: url(../img/more.png) no-repeat right;
+    background-size: 16%;
+}

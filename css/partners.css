@@ -1,0 +1,223 @@
+@charset "utf-8";
+/*清除浮动*/
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: block;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+/*左浮动*/
+.lf {
+  float: left;
+}
+/*右浮动*/
+.rf {
+  float: right;
+}
+ul,
+ol,
+dl {
+  list-style: none;
+}
+ul li {
+  list-style: none;
+}
+input,
+button {
+  box-sizing: border-box;
+}
+body {
+  font-family: "宋体";
+}
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+@media only screen and (max-width: 768px) {
+  .icon-container {
+    width: 100%;
+    margin: 0 auto 0.8533rem;
+  }
+  .icon-container .icon-item {
+    padding: 2.68817204% 0.1067rem;
+    width: 31.61290323%;
+    margin-right: 0.80645161%;
+  }
+  .icon-container .icon-item img {
+    width: 16.12903226%;
+    margin-right: 0;
+    margin-top: 0.2133rem;
+  }
+  .icon-container .right-item {
+    width: 80%;
+  }
+  .icon-container .title,
+  .icon-container .en-title {
+    font-size: 0.256rem;
+  }
+  .title-container {
+    width: 100%;
+  }
+  .title-container .title {
+    font-size: 0.4693rem;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .icon-container {
+    width: 80%;
+    margin: 0 auto 0.8533rem;
+  }
+  .icon-container .icon-item {
+    padding: 4.03225806% 5.37634409% 0;
+    width: 30%;
+    margin-right: 4.03225806%;
+  }
+  .icon-container .icon-item img {
+    width: 21.50537634%;
+    margin-right: 5.37634409%;
+  }
+  .icon-container .title {
+    font-size: 0.4267rem;
+  }
+  .icon-container .en-title {
+    font-size: 0.2987rem;
+  }
+  .title-container {
+    width: 52.63157895%;
+  }
+  .title-container .title {
+    font-size: 0.4693rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .icon-container {
+    width: 80%;
+    margin: 0 auto 0.8533rem;
+  }
+  .icon-container .icon-item {
+    padding: 2.68817204% 5.37634409% 0;
+    width: 30%;
+    margin-right: 4.03225806%;
+  }
+  .icon-container .icon-item img {
+    width: 21.50537634%;
+    margin-right: 5.37634409%;
+  }
+  .title-container {
+    width: 52.63157895%;
+  }
+  .title-container .title {
+    font-size: 0.512rem;
+  }
+}
+.join-us {
+  display: block;
+  width: 76.54%;
+  margin: 0.4267rem auto;
+  overflow: hidden;
+}
+.join-us .text {
+  float: right;
+  font-size: 0.512rem;
+  color: #282d2a;
+  padding: 0 0.5973rem;
+  background: url(../img/more.png) no-repeat right;
+  background-size: 14%;
+}
+.reason-container {
+  margin-top: 0.4267rem;
+}
+.reason-container .reason-wraper {
+  width: 80%;
+  margin: 0 auto;
+}
+.reason-container .icon-wraper {
+  width: 100%;
+  margin: 0 auto;
+}
+.reason-container .icon-wraper .icon-item {
+  height: 2.6667rem;
+  background-color: #F4F4F4;
+  box-sizing: border-box;
+}
+.reason-container .icon-wraper .icon-item:last-child {
+  margin-right: 0;
+}
+.reason-container .icon-wraper .icon-item img {
+  max-width: 1.7493rem;
+}
+.reason-container .icon-wraper .icon-item .right-item {
+  text-align: center;
+}
+.reason-container .icon-wraper .icon-item .title {
+  margin-bottom: 0.2133rem;
+}
+.reason-container .icon-wraper .icon-item .line {
+  height: 1px;
+  border: none;
+  background-color: #4175E1;
+  width: 0.64rem;
+  margin-bottom: 0.2133rem;
+  margin-left: 40%;
+}
+.reason-container .icon-line {
+  background-color: #E0E0E0;
+  height: 1px;
+  border: none;
+  margin-bottom: 1.024rem;
+}
+.reason-container .title-container {
+  margin: 0 auto 0.8533rem;
+}
+.reason-container .title-container .line {
+  height: 0.0427rem;
+  width: 30%;
+  background-color: #455fc0;
+}
+.reason-container .title-container .line.lf,
+.reason-container .title-container .line.rf {
+  margin-top: 0.2133rem;
+}
+.reason-container .title-container .title {
+  text-align: center;
+  color: #455fc0;
+  width: 40%;
+}
+.reason-container .intro {
+  width: 75%;
+  margin: 0 auto;
+  font-size: 0.4267rem;
+  color: #333;
+  text-align: center;
+  line-height: 1.5;
+  font-weight: bold;
+}
+.reason-container .item-box {
+  margin-top: 2.24rem;
+}
+.reason-container .item-box .item {
+  width: 26.93548387%;
+  margin-right: 8.06451613%;
+}
+.reason-container .item-box .item:last-child {
+  margin-right: 0;
+}
+.reason-container .item-box .item .item-title {
+  font-size: 0.3413rem;
+  padding-left: 0.2133rem;
+  border-left: 0.128rem solid #2964e7;
+  color: #2964e7;
+  margin-bottom: 0.5333rem;
+}
+.reason-container .item-box .item .content {
+  font-size: 0.2987rem;
+  line-height: 2;
+  word-break: break-all;
+}

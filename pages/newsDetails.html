@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title i18n="menu.newsDetails">新闻详情</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"> 
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="../js/libs/font_size.js"></script>
+    <script src="../js/libs/jquery-1.11.2.min.js"></script>
+    <script src="../js/libs/jquery.i18n.js"></script>
+    <script src="../js/main.js"></script>        
+    <link rel= "stylesheet" type = "text/css" href = "../css/common.css"/>
+    <link rel= "stylesheet" type = "text/css" href = "../css/newsDetails.css"/>
+</head>
+<body>
+    <div id="header"></div>
+    <!--<div class="newsDetails_banner">-->
+        <!--<img class="newsDetails_banner_img" src="../img/news_detail_banner.png"/>-->
+        <!--<div class="newsDetails_mask">-->
+            <!--<img src="../img/indexbanner_road.png"/>-->
+            <!--<p class="info" i18n="home.aboutUSDetail">-->
+                <!--西安鼎盛国际货运代理有限公司是货物运输信息咨询，仓储，装卸分拣，集装箱拼箱拆箱，报关报检，铁路等业务为一体的综合物流服务商。-->
+            <!--</p>-->
+        <!--</div>-->
+    <!--</div>-->
+    <div class="newsDetails_title">
+        <p class="newsDetails_txt" i18n="menu.newsDetails">
+            新闻详情
+        </p>
+    </div>
+    <div class="newsDetails_main">
+        <div class="newsDetails_container">
+            <!-- 新闻列表位置 -->
+        </div>
+        <a href="news.html" class="newsDetails_to_news">
+            <h3 class="news" i18n="menu.news">
+                新闻资讯
+            </h3>
+        </a>
+    </div>
+    <div id="footer"></div>
+</body>
+<script>
+    // 更改news_data.json数据下的srcHref的链接地址
+    $(function() {
+        $.ajax({
+            type: "GET",
+            url: "../js/libs/news_data.json",
+            dataType: "json",
+            success: function(data) {
+                var str = '<ul class="newsDetails_lists">';
+                    $.each(data.newsLists, function(i, n) {
+                        str += '<li class="newsDetails_lists_li">' +
+                                    '<a href="' + n["srcHref"] + '" target="_blank">' +
+                                        '<div class="newsDetails_lists_img">' +
+                                            '<img src="../img/' + n["srcImg"] + '"'  + 'class="_img">' +
+                                        '</div>' +
+                                        '<p class="newsDetails_lists_txt" i18n="newsDetails.articleTitle01">' +
+                                            n["title"] +
+                                        '</p>' +
+                                    '</a>' +
+                                '</li>';
+                })
+                str += "</ul>";
+                $(".newsDetails_container").prepend(str);
+            }
+        })
+    })
+</script>
+</html> 

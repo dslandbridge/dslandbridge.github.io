@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title i18n="menu.home">首页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="西安鼎盛国际货运代理有限公司是一家集货物运输信息咨询、仓储装卸分拣、集装箱拼箱拆箱、报关报检、铁路等业务为一体的综合物流服务商。">
+    <script src="../js/libs/font_size.js"></script>
+    <link rel= "stylesheet" type = "text/css" href = "../css/common.css"/>
+    <link rel= "stylesheet" type = "text/css" href = "../css/index.css"/>
+</head>
+<body>
+<!--顶部菜单-->
+<div id="header"></div>
+<!--banner-->
+<div class="top-container">
+    <div class="banner">
+        <img class="banner-bg" src="../img/news_detail_banner.png" alt=""/>
+        <div class="mask clearfix">
+            <img src="../img/indexbanner_road.png" alt=""/>
+            <p class="intro" i18n="home.aboutUSDetail">西安鼎盛国际货运代理有限公司是一家集货物运输信息咨询、仓储装卸分拣、集装箱拼箱拆箱、报关报检、铁路等业务为一体的综合物流服务商。</p>
+        </div>
+    </div>
+</div>
+<!--关于我们-->
+<div class="about-us">
+    <main>
+        <div class="title-container clearfix">
+            <div class="line lf"></div>
+            <div class="title lf" i18n="menu.aboutUS">关于我们</div>
+            <div class="line rf"></div>
+        </div>
+        <!--<div class="en-about">ABOUT US</div>-->
+        <div class="clearfix">
+            <div class="left-info lf">
+                <div class="item clearfix">
+                    <div class="left-item lf">
+                        <img src="../img/ab_one.png" alt=""/>
+                    </div>
+                    <div class="right-item rf">
+                        <p class="title" i18n="aboutUS.ancientSilkRoad">立足古丝绸之路</p>
+                        <p class="sub-title" i18n="aboutUS.ancientSilkRoadDetail">西安鼎盛国际货运代理有限公司立足西安国际港务区，地处古丝绸之路起点，是西安市规划的仓储物流核心区</p>
+                    </div>
+                </div>
+                <div class="item clearfix">
+                    <div class="left-item lf">
+                        <img src="../img/ab_two.png" alt=""/>
+                    </div>
+                    <div class="right-item rf">
+                        <p class="title" i18n="aboutUS.customerLogistics">客户物流无缝对接</p>
+                        <p class="sub-title" i18n="aboutUS.ancientSilkRoadDetail">依托西安国际港务区三大功能平台：公路港码头、铁路集装箱中心站、综合保税区，实现货物实时监控</p>
+                    </div>
+                </div>
+                <div class="item clearfix">
+                    <div class="left-item lf">
+                        <img src="../img/ab_three.png" alt=""/>
+                    </div>
+                    <div class="right-item rf">
+                        <p class="title" i18n="aboutUS.serviceNetwork">完善配套的服务网络</p>
+                        <p class="sub-title" i18n="aboutUS.serviceNetworkDetail">集铁路运输、海运、空运、陆运和各式联运为一体的全方位、多功能的国际货运网络体系</p>
+                    </div>
+                </div>
+                <div class="item clearfix">
+                    <div class="left-item lf">
+                        <img src="../img/ab_four.png" alt=""/>
+                    </div>
+                    <div class="right-item rf">
+                        <p class="title" i18n="aboutUS.stablePartners">国内外稳定的合作伙伴</p>
+                        <p class="sub-title" i18n="aboutUS.stablePartnersDetail">西安鼎盛国际货运代理有限公司在宁波、成都设立分公司，在中亚，中欧等国家，建立中亚全境，欧洲全境、全方位、多功能的国际货运网络体系</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right-imgs lf">
+                <ul class="bg-ball">
+                    <li class="img img1"></li>
+                    <li class="img img2"></li>
+                    <li class="img img3"></li>
+                    <li class="img img4"></li>
+                    <li class="dot dot1"></li>
+                    <li class="dot dot2"></li>
+                    <li class="dot dot3"></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</div>
+
+<!--线路介绍-->
+<div class="line-container">
+    <div class="title" i18n="menu.lineIntroduction">线路介绍</div>
+    <div class="top-search clearfix">
+        <div class="input-row lf">
+            <span class="input-name" i18n="lineIntroduction.departureStation">始发站</span>
+            <input type="text" maxlength="50" id="start" i18n="lineIntroduction.inputDepartureStation" placeholder="输入始发站名称"/>
+        </div>
+        <div class="input-row lf">
+            <span class="input-name" i18n="lineIntroduction.destination">目的站</span>
+            <input type="text" maxlength="50" id="destination" i18n="lineIntroduction.inputDestination" placeholder="输入目的站名称"/>
+        </div>
+        <!--<div class="input-row lf">-->
+            <!--<span class="input-name" i18n="lineIntroduction.keyword">关键字</span>-->
+            <!--<input type="text" id="keyword" maxlength="50" i18n="lineIntroduction.inputKeyword" placeholder="输入要查询的关键字"/>-->
+        <!--</div>-->
+        <button class="search lf" type="button" id="search" i18n="lineIntroduction.search">搜索</button>
+    </div>
+    <div class="rows-container">
+        <div class="line-row clearfix row-head">
+            <div class="lf col-1"></div>
+            <div class="lf col-2" i18n="lineIntroduction.departureStation">始发站</div>
+            <div class="lf col-3"></div>
+            <div class="lf col-4" i18n="lineIntroduction.destination">目的站</div>
+            <div class="lf col-5"></div>
+            <div class="lf col-6" i18n="lineIntroduction.modeOfTransport">运输方式</div>
+            <div class="lf col-7"></div>
+            <div class="lf col-8" i18n="lineIntroduction.shiftDescription">班次说明</div>
+            <div class="lf col-9"></div>
+        </div>
+        <div class="line-row nodata-row">
+            <div class="lf col-1"></div>
+            <div class="lf nodata-col" i18n="home.nodata">暂无数据</div>
+            <div class="lf col-9"></div>
+        </div>
+        <div id="rows-container" class="rows-scroll-body">
+
+        </div>
+        <!--<div class="line-row clearfix">-->
+            <!--<div class="lf col-1"></div>-->
+            <!--<div class="lf col-2">西安</div>-->
+            <!--<div class="lf col-3"></div>-->
+            <!--<div class="lf col-4">慕尼黑</div>-->
+            <!--<div class="lf col-5"></div>-->
+            <!--<div class="lf col-6">-->
+                <!--<span i18n="lineIntroduction.railway">铁路</span>|-->
+                <!--<span i18n="lineIntroduction.seaTransportation">海运</span>|-->
+                <!--<span i18n="lineIntroduction.groundTransportation">陆运</span>-->
+            <!--</div>-->
+            <!--<div class="lf col-7"></div>-->
+            <!--<div class="lf col-8">XXXXX</div>-->
+            <!--<div class="lf col-9"></div>-->
+        <!--</div>-->
+
+    </div>
+</div>
+<!--新闻资讯-->
+<div class="news-container">
+    <div class="title" i18n="menu.news">新闻资讯</div>
+    <div class="swiper-container clearfix">
+        <a href="news.html" class="more"><span i18n="home.more">更多</span>&gt;</a>
+        <div class="swiper-slide lf">
+            <img src="../img/image001.jpg" alt=""/>
+            <a href="https://mp.weixin.qq.com/s/oIHPALxjcTqP_-3GeAhlxw" target="_blank">
+                <p i18n="newsDetails.articleTitle01">西安鼎盛国际货运代理有限公司是货物运输信息咨询、仓储、装卸分拣、集装箱拼箱拆箱、报关报检、铁路等业务为一体的综合物流服务商。</p>
+            </a>
+        </div>
+        <div class="swiper-slide lf">
+            <img src="../img/image002.png" alt=""/>
+            <a href="https://mp.weixin.qq.com/s/EHkuj3TmUSVbXgmxw6T5dw" target="_blank">
+                <p i18n="newsDetails.articleTitle02">当地时间2017年11月10日，中欧班列（科沃拉—西安）首列在芬兰科沃拉顺利开行。该趟班列由西安国际港务区陆港集。</p>
+            </a>
+        </div>
+        <div class="swiper-slide lf">
+            <img src="../img/image004.jpg" alt=""/>
+            <a href="https://mp.weixin.qq.com/s/hyzyZ70DiG5GmS7d0BCI2w" target="_blank">
+                <p i18n="newsDetails.articleTitle03">26日，京广高铁正式开通运营。羊城晚报记者获悉，武广高铁运营后已有广东快递企业试水广州长沙间的高铁快件运输。</p>
+            </a>
+        </div>
+        <div class="swiper-slide lf">
+            <img src="../img/image007.jpg" alt=""/>
+            <a href="https://mp.weixin.qq.com/s/O9Av-hhnXbUMpH5zn01g_w" target="_blank">
+                <p i18n="newsDetails.articleTitle04">第三方物流在国外常被称为“契约物流”、“外协物流”或“合同物流”，是80 年代中期才在欧美发达国家出现的概念。</p>
+            </a>
+        </div>
+    </div>
+</div>
+<!--合作伙伴-->
+<div class="partner-container">
+    <div class="title" i18n="menu.partners">合作伙伴</div>
+    <div class="logo-box clearfix">
+        <img src="../img/logo-tcl.png" class="lf" alt="TCL"/>
+        <img src="../img/logo-chengdu.png" class="lf" alt=""/>
+        <img src="../img/logo-dalian.png" class="lf" alt=""/>
+        <img src="../img/logo-huarun.png" class="lf" alt=""/>
+        <img src="../img/logo-samsung.png" class="lf" alt=""/>
+        <img src="../img/logo-shenyang.png" class="lf" alt=""/>
+        <img src="../img/logo-wae.png" class="lf" alt=""/>
+        <img src="../img/logo-xiangou.png" class="lf" alt=""/>
+        <img src="../img/logo-zhongyuan.png" class="lf" alt=""/>
+    </div>
+</div>
+<!--&lt;!&ndash;在线留言&ndash;&gt;-->
+<!--<div class="online-container">-->
+    <!--<div class="form-box">-->
+        <!--<p class="title">在线留言</p>-->
+        <!--<p class="en-title">ONLINE MESSAGE</p>-->
+        <!--<div class="input-row">-->
+            <!--<span class="input-name">姓名</span>-->
+            <!--<input type="text" class="user-name"/>-->
+            <!--<span>*</span>-->
+        <!--</div>-->
+        <!--<div class="input-row">-->
+            <!--<span class="input-name">电话</span>-->
+            <!--<input type="text" class="user-phone"/>-->
+            <!--<span>*</span>-->
+        <!--</div>-->
+        <!--<div class="input-row">-->
+            <!--<span class="input-name">内容</span>-->
+            <!--<textarea type="text" class="content"></textarea>-->
+            <!--<span>*</span>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+<!--底部-->
+<div id="footer"></div>
+
+<script src="../js/libs/jquery-1.11.2.min.js"></script>
+<script src="../js/libs/jquery.i18n.js"></script>
+<script src="../js/main.js"></script>
+<script>
+    var tableData={};
+    $(document).ready(function(){
+        getLineData(function(res){
+            tableData = res.data;
+            renderTable(res.data)
+        });
+        $('#search').on('click',function(){
+            var start = $('#start').val().trim();
+            var destination =$('#destination').val().trim();
+            var searchData={};
+            if(start == '' && destination == ''){
+                renderTable(tableData)
+                return;
+            }
+            if(start!=''){
+                searchData.start=start;
+            }
+            if(destination!=''){
+                searchData.destination=destination;
+            }
+            var searchResult = filterData(searchData,tableData)
+            renderTable(searchResult)
+        })
+    })
+
+    function renderTable(data){
+        if(data && data.length>0){
+            $('.nodata-row').hide();
+            var html='';
+            for(var i= 0,len=data.length;i<len;i++){
+                var obj = data[i];
+                var transportStr='';
+                var typeArr = obj.transport_type.split(',');
+                for(var j=0;j<typeArr.length;j++){
+                    var type = typeArr[j];
+                    var typestr='';
+                    if(type == 1){
+                        typestr='<span i18n="lineIntroduction.railway">铁路</span>';
+                    }else if(type == 2){
+                        typestr='<span i18n="lineIntroduction.seaTransportation">海运</span>';
+                    }else if(type == 3){
+                        typestr='<span i18n="lineIntroduction.groundTransportation">陆运</span>';
+                    }
+                    transportStr+=typestr;
+                    if(typeArr.length>1 && j!=typeArr.length-1){
+                        transportStr+='|'
+                    }
+                }
+                html+='<div class="line-row clearfix">' +
+                '<div class="lf col-1"></div>' +
+                '<div class="lf col-2">'+obj.start+'</div>' +
+                '<div class="lf col-3"></div>' +
+                '<div class="lf col-4">'+obj.destination+'</div>' +
+                '<div class="lf col-5"></div>' +
+                '<div class="lf col-6">'
+                + transportStr +
+                '</div>' +
+                '<div class="lf col-7"></div>' +
+                '<div class="lf col-8">'+obj.shift_des+'</div>' +
+                '<div class="lf col-9"></div>' +
+                '</div>';
+            }
+            $('#rows-container').html(html)
+        }else{
+            $('#rows-container').html('')
+            $('.nodata-row').show();
+        }
+    }
+    function filterData(searchObj,data){
+        var objLength=Object.keys(searchObj).length;
+        if(objLength==1){
+            for(var key in searchObj){
+                return data.filter(function(item){
+                    return item[key].toString().indexOf(searchObj[key])!=-1;
+                })
+            }
+        }else{
+            return data.filter(function(item){
+                return (item['start'].toString().indexOf(searchObj['start'])!=-1) && (item['destination'].toString().indexOf(searchObj['destination'])!=-1) ;
+            })
+        }
+    }
+    function getLineData(callback){
+        $.get('../js/libs/search_data.json',function(result){
+            callback(result);
+        },'json');
+    }
+</script>
+</body>
+</html>

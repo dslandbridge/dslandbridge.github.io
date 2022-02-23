@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+    <meta charset="UTF-8">
+    <title i18n="menu.lineDetails">线路详情</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="../js/libs/font_size.js"></script>
+    <link rel= "stylesheet" type = "text/css" href = "../css/common.css"/>
+    <!--ToDo:index.css代码提取到common.css 后删除引入index.css -->
+    <link rel= "stylesheet" type = "text/css" href = "../css/index.css"/>
+    <link rel= "stylesheet" type = "text/css" href = "../css/line_details.css"/>
+</head>
+<body>
+<!--顶部菜单-->
+<div id="header"></div>
+<!--线路介绍-->
+<div class="line-container">
+    <div class="title" i18n="menu.lineIntroduction">线路介绍</div>
+    <div class="top-search clearfix">
+        <div class="input-row lf">
+            <span class="input-name" i18n="lineIntroduction.departureStation">始发站</span>
+            <input type="text" maxlength="50" id="start" i18n="lineIntroduction.inputDepartureStation" placeholder="输入始发站名称"/>
+        </div>
+        <div class="input-row lf">
+            <span class="input-name" i18n="lineIntroduction.destination">目的站</span>
+            <input type="text" maxlength="50" id="destination" i18n="lineIntroduction.inputDestination" placeholder="输入目的站名称"/>
+        </div>
+        <button class="search lf" type="button" id="search" i18n="lineIntroduction.search">搜索</button>
+    </div>
+    <div class="rows-container">
+        <div class="line-row clearfix row-head">
+            <div class="lf col-1"></div>
+            <div class="lf col-2" i18n="lineIntroduction.departureStation">始发站</div>
+            <div class="lf col-3"></div>
+            <div class="lf col-4" i18n="lineIntroduction.destination">目的站</div>
+            <div class="lf col-5"></div>
+            <div class="lf col-6" i18n="lineIntroduction.modeOfTransport">运输方式</div>
+            <div class="lf col-7"></div>
+            <div class="lf col-8" i18n="lineIntroduction.shiftDescription">班次说明</div>
+            <div class="lf col-9"></div>
+        </div>
+        <div class="line-row nodata-row">
+            <div class="lf col-1"></div>
+            <div class="lf nodata-col" i18n="home.nodata">暂无数据</div>
+            <div class="lf col-9"></div>
+        </div>
+        <div id="rows-container" class="rows-scroll-body">
+
+        </div>
+    </div>
+</div>
+<!--深耕国内外运输线-->
+<div class="line-detail">
+    <div class="mask">
+        <div class="intro-box">
+            <p class="title" i18n="lineDetails.introTitle">深耕国内外运输线路</p>
+            <p class="en-title">DEEP CULTIVATION OF DOMESTIC AND FOREIGN TRANSPORTATION ROUTES</p>
+            <p class="intro intro-one" i18n="lineDetails.paragraph01">西安鼎盛国际货运代理有限公司在宁波，成都设立分公司；加之扩展中亚，中欧等国家建立中亚全境，欧洲全境等建立长期合作伙伴。集铁路运输，海运，空运，陆运河各式联运为一体的全方位，多功能的国际货运网络体系。</p>
+            <p class="intro intro-two" i18n="lineDetails.paragraph02">其中路线包含：阿拉口山，霍尔果斯，满洲里，哈尔滨，天津，青岛，上海，郑州，武汉，重庆，兰州，中亚，中欧等国家。</p>
+            <a class="button" href="lineIntro_rail.html" i18n="menu.lineIntroduction">线路介绍</a>
+        </div>
+    </div>
+</div>
+<!--底部-->
+<div id="footer"></div>
+<script src="../js/libs/jquery-1.11.2.min.js"></script>
+<script src="../js/libs/jquery.i18n.js"></script>
+<script src="../js/main.js"></script>
+<script>
+    var tableData={};
+    $(document).ready(function(){
+        getLineData(function(res){
+            tableData = res.data;
+            renderTable(res.data)
+        });
+        $('#search').on('click',function(){
+            var start = $('#start').val().trim();
+            var destination =$('#destination').val().trim();
+            var searchData={};
+            if(start == '' && destination == ''){
+                renderTable(tableData)
+                return;
+            }
+            if(start!=''){
+                searchData.start=start;
+            }
+            if(destination!=''){
+                searchData.destination=destination;
+            }
+            var searchResult = filterData(searchData,tableData)
+            renderTable(searchResult)
+        })
+    })
+
+    function renderTable(data){
+        if(data && data.length>0){
+            $('.nodata-row').hide();
+            var html='';
+            for(var i= 0,len=data.length;i<len;i++){
+                var obj = data[i];
+                var transportStr='';
+                var typeArr = obj.transport_type.split(',');
+                for(var j=0;j<typeArr.length;j++){
+                    var type = typeArr[j];
+                    var typestr='';
+                    if(type == 1){
+                        typestr='<span i18n="lineIntroduction.railway">铁路</span>';
+                    }else if(type == 2){
+                        typestr='<span i18n="lineIntroduction.seaTransportation">海运</span>';
+                    }else if(type == 3){
+                        typestr='<span i18n="lineIntroduction.groundTransportation">陆运</span>';
+                    }
+                    transportStr+=typestr;
+                    if(typeArr.length>1 && j!=typeArr.length-1){
+                        transportStr+='|'
+                    }
+                }
+                html+='<div class="line-row clearfix">' +
+                '<div class="lf col-1"></div>' +
+                '<div class="lf col-2">'+obj.start+'</div>' +
+                '<div class="lf col-3"></div>' +
+                '<div class="lf col-4">'+obj.destination+'</div>' +
+                '<div class="lf col-5"></div>' +
+                '<div class="lf col-6">'
+                + transportStr +
+                '</div>' +
+                '<div class="lf col-7"></div>' +
+                '<div class="lf col-8">'+obj.shift_des+'</div>' +
+                '<div class="lf col-9"></div>' +
+                '</div>';
+            }
+            $('#rows-container').html(html)
+        }else{
+            $('#rows-container').html('')
+            $('.nodata-row').show();
+        }
+    }
+    function filterData(searchObj,data){
+        var objLength=Object.keys(searchObj).length;
+        if(objLength==1){
+            for(var key in searchObj){
+                return data.filter(function(item){
+                    return item[key].toString().indexOf(searchObj[key])!=-1;
+                })
+            }
+        }else{
+            return data.filter(function(item){
+                return (item['start'].toString().indexOf(searchObj['start'])!=-1) && (item['destination'].toString().indexOf(searchObj['destination'])!=-1) ;
+            })
+        }
+    }
+    function getLineData(callback){
+        $.get('../js/libs/search_data.json',function(result){
+            callback(result);
+        },'json');
+    }
+</script>
+</body>
+</html>
